@@ -21,6 +21,8 @@ public class CourseAdapter extends ArrayAdapter<Course> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        //parent = layout of the main activity
+        //convertView = layout to display each record
         Course course = getItem(position);
 
         LayoutInflater inflater  = (LayoutInflater) getContext()

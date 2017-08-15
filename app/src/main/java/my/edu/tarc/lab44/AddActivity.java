@@ -42,7 +42,7 @@ public class AddActivity extends AppCompatActivity {
         course.setCredit(editTextCredit.getText().toString());
 
         try {
-            makeServiceCall(this, "https://bait2073.000webhostapp.com/insert_course.php", course);
+            makeServiceCall(this, "https://cash-on-wise.000webhostapp.com/insert_course.php", course);
         } catch (Exception e) {
             e.printStackTrace();
             Toast.makeText(getApplicationContext(), "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();

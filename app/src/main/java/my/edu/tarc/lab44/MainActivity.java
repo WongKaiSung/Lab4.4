@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listViewCourse;
     List<Course> caList;
     private ProgressDialog pDialog;
-    private static String GET_URL = "https://bait2073.000webhostapp.com/select_course.php";
+    private static String GET_URL = "https://cash-on-wise.000webhostapp.com/select_course.php";
     RequestQueue queue;
 
     @Override
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         queue = Volley.newRequestQueue(context);
 
         if (!pDialog.isShowing())
-            pDialog.setMessage("Syn with server...");
+            pDialog.setMessage("Loading...");
         pDialog.show();
 
         JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
